@@ -23,6 +23,6 @@ w trybie odczytu danych z pliku /dev/urandom.
 
 
 Dodatkowe informacje:
-Na ocenę 5 (bdb) – wysyłanie sygnałów do procesów powinno odbywać się z wykorzystaniem dodatkowego programu napisanego w języku C. Program ten powinien umożliwiać (przy pomocy menu użytkownika) wybór sygnału oraz procesu do którego ten sygnał ma zostać wysłany.
+wysyłanie sygnałów do procesów powinno odbywać się z wykorzystaniem dodatkowego programu napisanego w języku C. Program ten powinien umożliwiać (przy pomocy menu użytkownika) wybór sygnału oraz procesu do którego ten sygnał ma zostać wysłany.
 
 Użyte mechanizmy komunikacyjne: kolejka FIFO oraz łącze nienazwane
