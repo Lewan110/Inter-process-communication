@@ -1,6 +1,9 @@
 Opracować zestaw programów typu producent - konsument realizujących następujący schemat synchronicznej komunikacji międzyprocesowej:
+
 Proces 1:	czyta dane ze standardowego strumienia wejściowego i przekazuje je w niezmienionej formie do procesu 2 poprzez mechanizm komunikacyjny K1.
+
 Proces 2: 	pobiera dane przesłane przez proces 1. Konwertuje dane otrzymane z procesu 1 do postaci heksadecymalnej i przekazuje do procesu 3 poprzez mechanizm komunikacyjny K2.
+
 Proces 3:	pobiera dane wyprodukowane przez proces 2 i wypisuje je na standardowym strumieniu diagnostycznym. Jednostki danych powinny zostać wyprowadzone po 15 w pojedynczym wierszu i oddzielone spacjami.
 
 Wszystkie trzy procesy powinny być powoływane automatycznie z jednego procesu inicjującego. Po powołaniu procesów potomnych proces inicjujący wstrzymuje pracę. Proces inicjujący wznawia pracę w momencie kończenia pracy programu (o czym niżej), jego zadaniem jest „posprzątać” po programie przed zakończeniem działania.
