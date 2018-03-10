@@ -19,7 +19,7 @@
 int main(int argc, char *argv[]) {
 
 
-char nazwa_pliku[100];
+char file_name[100];
 int read_from_file,var,rng,urnd,value;
 int my_pipe[2];
 pipe(my_pipe);
@@ -50,7 +50,7 @@ printf("\nJa tu tylko sprzatam\n");
 }
 
 void K1_kill(int sig) {
-    printf("\notrzymalem sigusr-ginee\n");
+    printf("\n otrzymalem sigusr-gine\n");
     kill(m+2, SIGQUIT);
     kill(m+3, SIGQUIT);
     kill(m,SIGCONT);
@@ -61,7 +61,7 @@ void K1_kill(int sig) {
 
 }
 void K2_kill(int sig) {
-printf("\notrzymalem sigusginer-ginee\n");
+printf("\n otrzymalem sigusginer-gine\n");
     kill(m+3, SIGQUIT);
     kill(m+1, SIGQUIT);
     kill(m,SIGCONT);
@@ -70,7 +70,7 @@ printf("\notrzymalem sigusginer-ginee\n");
 
 }
 void K3_kill(int sig) {
-printf("\notrzymalem sigusr-ginee\n");
+printf("\n otrzymalem sigusr-gine\n");
     kill(m+1, SIGQUIT);
     kill(m+2, SIGQUIT);
     kill(m,SIGCONT);
@@ -158,10 +158,10 @@ signal(SIGUSR2, K1_kill);
 			
 		case 2:
 			printf("Podaj nazwe pliku: \n");
-			scanf("%99s", nazwa_pliku);
+			scanf("%99s", file_name);
 			const char *txt = ".txt";
-   			strcat(nazwa_pliku, txt);
-			if ((file = fopen(nazwa_pliku, "r")) == NULL) {
+   			strcat(file_name, txt);
+			if ((file = fopen(file_name, "r")) == NULL) {
 			printf("Plik nie istnieje\n");
 			exit(1);
 		} 
