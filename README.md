@@ -13,7 +13,6 @@ Operator może wysłać do dowolnego procesu sygnał zakończenia działania (S1
 Każdy z sygnałów przekazywany jest przez operatora tylko do jednego, dowolnego procesu. O tym, do którego procesu wysłać sygnał, decyduje operator, a nie programista. Każdy z sygnałów operator może wysłać do innego procesu. Mimo, że operator kieruje sygnał do jednego procesu, to pożądane przez operatora działanie musi zostać zrealizowane przez wszystkie trzy procesy.
 W związku z tym, proces odbierający sygnał od operatora musi powiadomić o przyjętym żądaniu pozostałe dwa procesy. Powinien wobec tego przekazać do nich odpowiedni sygnał informując o tym jakiego działania wymaga operator. Procesy odbierające sygnał, powinny zachować się adekwatnie do otrzymanego sygnału. Wszystkie trzy procesy powinny zareagować zgodnie z żądaniem operatora.
 Sygnały oznaczone w opisie zadania symbolami S1 ÷ S3 należy wybrać samodzielnie spośród dostępnych w systemie (np. SIGUSR1, SIGUSR2, SIGINT, SIGCONT).
-Mechanizmy komunikacji: K1 i K2 są podane w pliku lista_mechanizmow.pdf – każdy student ma przypisane inne mechanizmy komunikacji.
 Niektóre mechanizmy komunikacyjne wymagają użycia mechanizmów synchronizacji, np. semaforów. 
 
 Program ma umożliwiać uruchomienie:
