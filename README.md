@@ -1,3 +1,5 @@
+Projekt zaliczeniowy systemów operacyjnych, wymagania:
+
 Opracować zestaw programów typu producent - konsument realizujących następujący schemat synchronicznej komunikacji międzyprocesowej:
 
 Proces 1:	czyta dane ze standardowego strumienia wejściowego i przekazuje je w niezmienionej formie do procesu 2 poprzez mechanizm komunikacyjny K1.
